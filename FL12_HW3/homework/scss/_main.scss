@@ -1,29 +1,29 @@
-@mixin button()
-{position:absolute;
-background:$buttonBg;
-width:146px;
-height:50px;
-border-radius:3px;
-font-weight:bold;
-color:$textColorMain;
-font-size:16px;
-font-family:$font3;
-border:0px;}
-@mixin position($top,$left,$width,$height) 
-{top:$top;
-left:$left;
-height:$height;
-width:45px;}
+@mixin button() {
+    position: absolute;
+    background: $buttonBg;
+    width: 146px;
+    height: 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: $textColorMain;
+    font-size: 16px;
+    font-family: $font3;
+    border: 0px;
+}
+@mixin position($top, $left, $width, $height) {
+    top: $top;
+    left: $left;
+    height: $height;
+    width: 45px;
+}
 @mixin textPosition($top, $left, $width) {
     top: $top;
     left: $left;
     width: $width;
 }
-
 body {
     background-color: $mainbBg;
 }
-
 .header {
     display: flex;
     background-image: url($background_image);
@@ -35,7 +35,6 @@ body {
     background-position-y: center;
     border-bottom-right-radius: 50em 29em;
 }
-
 .landing-logo {
     img {
         position: absolute;
@@ -58,7 +57,6 @@ body {
         font-weight: normal
     }
 }
-
 .header_heading {
     position: absolute;
     font-weight: bold;
@@ -67,7 +65,6 @@ body {
     @include textPosition(79px, 200px, 500px);
     font-family: $font1;
 }
-
 .header_text {
     position: absolute;
     font-family: $font3;
@@ -75,13 +72,11 @@ body {
     @include textPosition(340px, 200px, 800px);
     white-space: pre-line;
 }
-
 .header_button {
     top: 510px;
     left: 200px;
     @include button();
 }
-
 .login {
     position: absolute;
     top: 520px;
@@ -92,11 +87,9 @@ body {
     font-family: $font1;
     font-size: 20px;
 }
-
 .section {
     margin-bottom: 230px;
 }
-
 .section_card {
     position: relative;
     display: flex;
@@ -110,7 +103,6 @@ body {
     margin-right: 503px;
     border-radius: 3px;
 }
-
 .section_text {
     font-size: 40px;
     font-weight: bold;
@@ -121,7 +113,6 @@ body {
     font-family: $font1;
     color: $textColor;
 }
-
 .section_card_heading {
     position: relative;
     text-align: center;
@@ -129,7 +120,6 @@ body {
     font-weight: bold;
     color: white;
 }
-
 .section_card_text {
     text-align: justify;
     top: 50px;
@@ -140,7 +130,6 @@ body {
     margin-right: 70px;
     padding: 10px;
 }
-
 .section_card_img {
     border-radius: 4px;
     width: 100%;
@@ -148,20 +137,17 @@ body {
     float: left;
     margin: 20px;
 }
-
 .section_link {
     position: absolute;
     text-align: center;
     color: white;
     width: 500px;
 }
-
 .section_banner_button {
     @include button();
     left: 1100px;
     top: 45px;
 }
-
 .section_banner {
     position: absolute;
     background: linear-gradient(45deg, $leftColor, $rightColor);
@@ -170,7 +156,6 @@ body {
     left: 440px;
     top: 2020px;
 }
-
 .section_banner_heading {
     position: absolute;
     font-size: 30px;
@@ -180,7 +165,6 @@ body {
     font-family: $font1;
     color: $textColor;
 }
-
 .section_banner_text {
     position: absolute;
     color: $bannerColor;
@@ -189,13 +173,11 @@ body {
     left: 151px;
     top: 60px;
 }
-
 .footer {
     background-color: $footerBg;
     height: 250px;
     top: 2000;
 }
-
 .footer_logo {
     @extend .landing-logo;
     img {
@@ -205,20 +187,15 @@ body {
     p {
         left: 360px;
         top: 2210px;
-color:$textColorMain;
+        color: $textColorMain;
     }
 }
-
 .footer-cr {
     color: $textColorMain;
     text-align: center;
-   
 }
-
 .footer_text {
     position: relative;
-    color:$textColorMain;
+    color: $textColorMain;
     text-align: right;
-    
-    
 }
