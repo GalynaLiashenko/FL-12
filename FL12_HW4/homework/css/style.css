@@ -1,0 +1,137 @@
+.nav {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  hight: 400px;
+  justify-content: space-around;
+  flex-direction: row; }
+  .nav .title {
+    display: inline-flex;
+    text-transform: uppercase;
+    flex-direction: row;
+    justify-content: flex-start; }
+
+.button-nav {
+  width: 100px;
+  hight: 300px;
+  background: #ffffff;
+  justify-content: flex-end;
+  border: 2px; }
+
+.button-nav:hover {
+  color: #bfba55; }
+
+.hr {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.button-discover {
+  text-transform: uppercase;
+  background: #ffffff;
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #777;
+  font-size: 12px;
+  border: 0px;
+  text-align: center; }
+
+.button {
+  margin-top: 20px;
+  background: #ffffff;
+  width: 146px;
+  height: 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #777;
+  font-size: 12px;
+  border: 1px solid;
+  border-color: #777;
+  text-align: center; }
+
+.hello-lab {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hello-lab img {
+    width: auto;
+    height: 100vh; }
+
+.hello {
+  color: #ffffff;
+  font-size: 43px; }
+
+.epam {
+  color: #bfba55; }
+
+.hello-text {
+  position: absolute;
+  z-index: 3;
+  color: #ffffff;
+  text-align: center;
+  top: 35%; }
+
+.news {
+  padding-top: 40px;
+  background-color: white;
+  display: flex;
+  weight: 900px;
+  flex-direction: column;
+  align-items: center; }
+
+.news-title {
+  text-align: left; }
+
+.autor-text {
+  display: inline-flex;
+  align-items: right; }
+
+.autor {
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row; }
+  .autor img {
+    display: inline-flex;
+    border-radius: 120px;
+    width: 40px;
+    hight: 40px; }
+
+.news-body {
+  color: #777;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px; }
+  .news-body news-title {
+    display: flex;
+    text-align: left; }
+
+.news-content {
+  display: inline-flex; }
+
+.news-image img {
+  width: 900px; }
+
+.footer {
+  padding: 40px;
+  justify-content: center;
+  Justify-content: spase-between;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: black;
+  color: #777;
+  position: relative;
+  width: 100%; }
+  .footer .col1 {
+    padding: 20px; }
+  .footer .col2 {
+    padding: 20px; }
+  .footer .epam {
+    color: #ffffff; }
+  .footer .talk {
+    color: #ffffff; }
