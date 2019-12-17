@@ -1,3 +1,7 @@
+.head {
+  position: relative;
+  display: flex; }
+
 .nav {
   position: relative;
   z-index: 2;
@@ -5,21 +9,19 @@
   background-color: #ffffff;
   position: fixed;
   width: 100%;
-  hight: 400px;
   justify-content: space-around;
   flex-direction: row; }
   .nav .title {
-    display: inline-flex;
+    display: flex;
     text-transform: uppercase;
     flex-direction: row;
     justify-content: flex-start; }
-
-.button-nav {
-  width: 100px;
-  hight: 300px;
-  background: #ffffff;
-  justify-content: flex-end;
-  border: 2px; }
+  .nav .button-nav {
+    display: flex;
+    width: 100px;
+    background: #ffffff;
+    justify-content: flex-end;
+    border: 0px; }
 
 .button-nav:hover {
   color: #bfba55; }
@@ -27,18 +29,6 @@
 .hr {
   padding-top: 60px;
   padding-bottom: 60px; }
-
-.button-discover {
-  text-transform: uppercase;
-  background: #ffffff;
-  width: 140px;
-  height: 40px;
-  border-radius: 20px;
-  font-weight: bold;
-  color: #777;
-  font-size: 12px;
-  border: 0px;
-  text-align: center; }
 
 .button {
   margin-top: 20px;
@@ -63,7 +53,8 @@
 
 .hello {
   color: #ffffff;
-  font-size: 43px; }
+  font-size: 43px;
+  font-weight: bold; }
 
 .epam {
   color: #bfba55; }
@@ -73,13 +64,24 @@
   z-index: 3;
   color: #ffffff;
   text-align: center;
-  top: 35%; }
+  top: 25%; }
+  .hello-text .button-discover {
+    top: 10%;
+    text-transform: uppercase;
+    background: #ffffff;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #777;
+    font-size: 12px;
+    border: 0px;
+    justify-content: center; }
 
 .news {
   padding-top: 40px;
   background-color: white;
   display: flex;
-  weight: 900px;
   flex-direction: column;
   align-items: center; }
 
@@ -88,7 +90,10 @@
 
 .autor-text {
   display: inline-flex;
-  align-items: right; }
+  align-items: flex-end; }
+
+.autor-line {
+  display: inline-flex; }
 
 .autor {
   justify-content: space-between;
@@ -97,8 +102,7 @@
   .autor img {
     display: inline-flex;
     border-radius: 120px;
-    width: 40px;
-    hight: 40px; }
+    width: 40px; }
 
 .news-body {
   color: #777;
@@ -119,7 +123,6 @@
 .footer {
   padding: 40px;
   justify-content: center;
-  Justify-content: spase-between;
   display: flex;
   flex-direction: row;
   align-items: stretch;
