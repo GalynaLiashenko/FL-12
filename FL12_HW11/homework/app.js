@@ -40,14 +40,12 @@ const rootNode = document.getElementById('root');
 rootNode.innerHTML = '<ul>';
 structure.forEach(
     function a (value) {
-       // console.log(value);
         if (value.folder === true) {
         rootNode.innerHTML = rootNode.innerHTML + 
         ' <li ><i class="material-icons" id="folder">folder</i>' + '<a href onclick="myFunction()">'+
          value.title +'</a>'+ '</li>';
            let child = value.children;
         child.forEach(function a (value) {
-             
                 if (value.folder === true) {
                     rootNode.innerHTML = rootNode.innerHTML + 
                     '<ul > <li id="hidden"> <i class="material-icons" id="folder">folder</i>  ' 
