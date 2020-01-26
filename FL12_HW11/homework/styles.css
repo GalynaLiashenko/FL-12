@@ -1,0 +1,20 @@
+/* Todo: your styles go here*/
+li {
+    list-style-type: none; 
+}
+#folder {color:orange;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+#file {color:lightgray;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+li:hover {
+    background-color:lightgray;
+}
+a {
+       text-decoration: none;
+  color:black;
+  }
+
